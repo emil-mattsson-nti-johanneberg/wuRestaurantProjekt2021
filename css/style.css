@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gridwrapper {
+    display: grid;
+    width: 100vw;
+    height: 150vh;
+    grid-template-areas:
+        "he he he he he"
+        "ma ma ma ma ma"
+        "ma ma ma ma ma"
+        "ma ma ma ma ma"
+        "co co co co co"
+        "co co co co co"
+        "co co co co co"
+        "fo fo fo fo fo"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 3px;
+}
+
+.header {
+    grid-area: he;
+    background-color: darkgray;
+}
+
+.header li{
+    display: inline;
+    float: right;
+}
+
+.main {
+    grid-area: ma;
+    background-color: darkgray;
+}
+
+
+.content {
+    grid-area: co;
+    background-color: darkgray;
+}
+
+.footer {
+    grid-area: fo;
+    background-color: darkgray;
+}
