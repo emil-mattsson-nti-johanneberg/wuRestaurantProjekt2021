@@ -7,7 +7,7 @@
 .gridwrapper {
     display: grid;
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     grid-template-areas:
         "he he he he he"
         "ma ma ma ma ma"
@@ -23,14 +23,44 @@
     grid-gap: 3px;
 }
 
-.header {
-    grid-area: he;
-    background-color: darkgray;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
+.header {
+    grid-area: he;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a{
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:20px;
+}
+
+.header nav {
+    float:right;
+    margin-right: 30px;
+    border: 2px solid black;
+}
 .header li{
     display: inline;
-    float: right;
+    padding: 0 20px 0 20px;
+}
+
+#logo {
+    border: 2px solid black;
+    margin-left: 100px;
+    height: 130px;
+}
+
+.home_outline a{
+    color: yellow;
 }
 
 .main {
