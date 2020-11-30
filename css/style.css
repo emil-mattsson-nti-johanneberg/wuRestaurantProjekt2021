@@ -7,7 +7,7 @@
 .gridwrapper {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     grid-template-areas:
         "he he he he he"
         "ma ma ma ma ma"
@@ -30,7 +30,7 @@ ul {
 
 .header {
     grid-area: he;
-    background-color: black;
+    background-color: #020607;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,6 +66,8 @@ ul {
 .main {
     grid-area: ma;
     background-color: darkgray;
+    background:url("../img/main_hamburgare.jpg") no-repeat 0 -200px;
+    background-size: cover;
 }
 
 
