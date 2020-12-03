@@ -2,7 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial Black', sans-serif;
 }
+
+p {
+    color: darkgrey;
+}
+
+h1, h3 {
+    color: yellow;
+}
+
 
 .gridwrapper {
     display: grid;
@@ -20,7 +30,6 @@
     ;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    grid-gap: 3px;
 }
 
 ul {
@@ -41,6 +50,10 @@ ul {
     text-decoration: none;
     text-transform: uppercase;
     font-size:20px;
+}
+
+.header a:hover{
+    color: yellow;
 }
 
 .header nav {
@@ -65,18 +78,75 @@ ul {
 
 .main {
     grid-area: ma;
-    background-color: darkgray;
     background:url("../img/main_hamburgare.jpg") no-repeat 0 -200px;
     background-size: cover;
+    background-color: #020607;
+}
+
+.main h1{
+    font-size: 70px;
+    margin-left: 160px;
+    margin-top: 90px;
+}
+
+.main p {
+    color: darkgrey;
+    font-size: 30px;
+    margin-left: 160px;
 }
 
 
 .content {
     grid-area: co;
-    background-color: darkgray;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    background-color: #020607;
+}
+
+.box {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px;
+    text-align: center;
+}
+
+
+.box img {
+    width: 200px;
+    height: 200px;
 }
 
 .footer {
     grid-area: fo;
-    background-color: darkgray;
+    background-color:  #020607;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
 }
