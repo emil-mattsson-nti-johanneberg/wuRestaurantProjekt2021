@@ -59,7 +59,6 @@ ul {
 .header nav {
     float:right;
     margin-right: 30px;
-    border: 2px solid black;
 }
 .header li{
     display: inline;
