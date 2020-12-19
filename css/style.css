@@ -53,12 +53,15 @@ ul {
 }
 
 
+/* Header css */
+
 .header {
     grid-area: he;
     background-color: #020607;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2px yellow solid;
 }
 
 .header a{
@@ -90,6 +93,8 @@ ul {
     color: yellow;
 }
 
+/* Main css */
+
 .main {
     grid-area: ma;
     background:url("../img/main_hamburgare.jpg") no-repeat 0 -200px;
@@ -109,6 +114,7 @@ ul {
     margin-left: 160px;
 }
 
+/* Content css */
 
 .content {
     grid-area: co;
@@ -130,6 +136,8 @@ ul {
     width: 200px;
     height: 200px;
 }
+
+/* footer css */
 
 .footer {
     grid-area: fo;
@@ -167,4 +175,42 @@ ul {
 .footer-col-3, .footer-col-4{
     flex-basis: 12%;
     text-align: center;
+}
+
+/* Menu.html */
+
+.menyn {
+    grid-area: ma;
+    background-color:#020607;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.menyn h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mat {
+    text-align: center;
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 150px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin: 0 10px 30px 10px;
+    background-color: white;
+    border-radius: 40px;
+    transition: transform 0.5s;
+    border: 1px solid darkgray;
+}
+
+.mat:hover{
+    transform: translateY(-5px);
+}
+
+.mat img {
+    width: 200px;
+    height: 200px;
 }
