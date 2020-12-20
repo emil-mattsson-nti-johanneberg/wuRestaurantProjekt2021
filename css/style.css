@@ -214,3 +214,37 @@ ul {
     width: 200px;
     height: 200px;
 }
+
+/* Locations */
+
+.karta {
+    grid-area: ma;
+    text-align: center;
+    background-color: #020607;
+}
+
+.karta ul {
+    padding: 20px;
+}
+
+.karta a{
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.karta a:hover{
+    color: yellow;
+}
+
+#map {
+    margin-top:  20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#map img{
+    height: 435.5px;
+    width: 753.5px;
+}
+
